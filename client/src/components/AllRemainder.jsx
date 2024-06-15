@@ -13,7 +13,7 @@ const AllRemainder = () => {
 
   const fetchProfile = async (userId) => {
     try {
-      const response = await axios.get(`http://localhost:4000/api/remainder/${userId}`);
+      const response = await axios.get(`https://qriocity-assessment-5.onrender.com/api/remainder/${userId}`);
       if (response.data) {
         setProfile(response.data);
       }
@@ -24,7 +24,7 @@ const AllRemainder = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/remainder/${id}`);
+      await axios.delete(`https://qriocity-assessment-5.onrender.com/api/remainder/${id}`);
       // Remove the deleted remainder from the profile state
       setProfile(profile.filter(remainder => remainder._id !== id));
     } catch (error) {

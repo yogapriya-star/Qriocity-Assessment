@@ -32,7 +32,7 @@ const EditHealthProfileForm = () => {
 
   const fetchProfile = async (userId) => {
     try {
-      const response = await axios.get(`http://localhost:4000/api/profile/${userId}`);
+      const response = await axios.get(`https://qriocity-assessment-5.onrender.com/api/profile/${userId}`);
       if (response.data) {
         setProfile(response.data);
       }
@@ -52,7 +52,7 @@ const EditHealthProfileForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `http://localhost:4000/api/profile/${profile.userId}`;
+      const url = `https://qriocity-assessment-5.onrender.com/api/profile/${profile.userId}`;
       const updatedProfile = { ...profile };
       delete updatedProfile._id; // Remove _id if present
       const response = await axios.put(url, updatedProfile);

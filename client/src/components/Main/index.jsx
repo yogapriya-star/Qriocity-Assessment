@@ -28,7 +28,7 @@ const Main = () => {
         return;
       }
 
-      const response = await axios.get(`http://localhost:4000/api/profile/${userId}`);
+      const response = await axios.get(`https://qriocity-assessment-5.onrender.com/api/profile/${userId}`);
       if (response.status === 200) {
         const profileData = response.data;
         if (profileData) {
@@ -57,7 +57,7 @@ const Main = () => {
         return;
       }
   
-      const response = await axios.get(`http://localhost:4000/api/remainder/${userId}`);
+      const response = await axios.get(`https://qriocity-assessment-5.onrender.com/api/remainder/${userId}`);
       if (response.status === 200) {
         const remainderData = response.data;
   

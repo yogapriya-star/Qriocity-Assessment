@@ -56,7 +56,7 @@ const AddRemainder = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const url = "http://localhost:4000/api/remainder";
+            const url = "https://qriocity-assessment-5.onrender.com/api/remainder";
             const response = await axios.post(url, profile);
             navigate("/");
             console.log('Form submitted:', profile);

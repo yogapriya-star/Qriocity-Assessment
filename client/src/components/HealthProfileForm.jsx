@@ -40,7 +40,7 @@ const HealthProfileForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const url = "http://localhost:4000/api/profile";
+        const url = "https://qriocity-assessment-5.onrender.com/api/profile";
             const {profile:res} = await axios.post(url,profile);
             navigate("/")
       // Example: Send data to a backend endpoint using axios (replace with your actual endpoint)
