@@ -50,6 +50,7 @@
   margin-left: auto; /* Push this button to the right */
 }
 
+
 @media (max-width: 768px) {
   .white1_btn {
     margin-left: 0; /* Reset margin for mobile view */
@@ -136,8 +137,4 @@
 .edit_btn a{
   text-decoration: none;
   color: white;
-}
-
-.edit_btn a:hover{
-  text-decoration: none;
 }
